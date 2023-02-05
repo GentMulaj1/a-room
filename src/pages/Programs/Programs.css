@@ -1,0 +1,253 @@
+.programs {
+    background-color: var(--bgBody);
+    width: 100%;
+    color: white;
+    text-transform: uppercase;
+    padding: 50px 0px;
+
+}
+
+.programs__FirstLeft {
+    width: 95%;
+    display: flex;
+}
+
+.programs__FirstRight {
+    width: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.programs__content {
+    display: flex;
+    padding: 50px 0px;
+}
+
+.programs__left {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 50px;
+}
+
+.programs__left h1 {
+    color: var(--btnBorder);
+    font-size: 46px;
+}
+
+.programs__left h4 {
+    width: 60%;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.programs__right {
+    width: 80%;
+}
+
+.programs__btns {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.btn__left {
+    color: white;
+    padding: 15px;
+    border: 1px solid var(--btnBorder);
+    border-radius: 50%;
+}
+
+.btn__right {
+    color: white;
+    padding: 25px;
+    border: 1px solid var(--btnBorder);
+    border-radius: 50%;
+    background-color: var(--lightPurple);
+    box-shadow: 0px 0px 64px 15px rgba(86,18,103,0.7);
+}
+
+.btn__left:hover ,.btn__right:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.programs__right {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+.programs__right h1{
+    font-size: 70px;
+    font-weight: 900;
+}
+
+.programs__right h4 {
+    width: 50%;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#programs__line {
+    width: 20%;
+    border-radius: 10px;
+    height: 5px;
+    color: white;
+    background-color: white;
+}
+
+#programs__lineRight {
+    width: 100%;
+    border-radius: 10px;
+    height: 5px;
+    color: white;
+    background-color: var(--btnBorder);
+}
+
+.programs__FirstRight span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    color: white;
+    background-color: white;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.programs__second {
+    background-color: var(--bgHeader);
+    border-radius: 30px;
+    padding: 50px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.second__left {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+.second__left h1 {
+    color: var(--btnBorder);
+}
+
+.second__left h2 {
+    width: 60%;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.second__left button {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    width: 200px;
+    padding: 15px 20px;
+    border-radius: 30px;
+    background-color: var(--btnBorder);
+    border: 5px solid var(--bgBody);
+}
+
+.second__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.second__right>a:nth-child(1) {
+    color: white;
+    font-size: 16px;
+    border: 1px solid var(--btnBorder);
+    border-radius: 50px;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 25px;
+}
+
+
+@media screen and (max-width: 992px) {
+    .programs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .programs__content {
+        flex-direction: column;
+    }
+
+    .programs__FirstLeft {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .programs__left {
+        width: 100%;
+        align-items: center;
+    }
+
+    .programs__left h4 {
+        width: 100%;
+        text-align: center;        
+    }
+
+    .programs__right {
+        width: 100%;
+    }
+    
+    .programs__right h1 {
+        width: 100%;
+    }
+    .programs__right h4 {
+        width: 100%;
+    }
+
+    #programs__lineRight {
+        display: none;
+    }
+
+    .programs__FirstRight {
+        width: 100%;
+        margin: 50px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .programs__second {
+        flex-direction: column;
+    }
+
+    .second__left {
+        width: 100%;
+    }
+
+    .second__left h1, .second__left h2{
+        width: 100%;
+    }
+
+    .second__left button {
+        margin-bottom: 50px;
+        align-self: center;
+    }
+
+    .second__right {
+        width: 100%;
+    }
+
+    .second__right>a:nth-child(1) {
+        width: 40%;
+        align-self: center;
+    }
+
+    .second__right>.programs__btns {
+        align-self: center;
+        margin-top: 50px;
+    } 
+}
